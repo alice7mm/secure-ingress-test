@@ -2,6 +2,6 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: external-dns
+  name: cert-manager
 spec:
-  path: ./external-dns
+  path: ../cert-manager
