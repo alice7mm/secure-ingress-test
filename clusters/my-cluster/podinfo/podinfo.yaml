@@ -11,5 +11,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: podinfo
+    namespace: flux-system
   validation: client
 
