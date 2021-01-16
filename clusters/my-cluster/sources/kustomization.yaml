@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: flux-system
 resources:
 - jetstack.yaml
-- istio.yaml
 - podinfo.yaml
