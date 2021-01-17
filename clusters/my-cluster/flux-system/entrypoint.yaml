@@ -4,11 +4,19 @@ kind: Kustomization
 metadata:
   name: kustomization-entrypoint
 spec:
-  path: ../kustomization
+  interval: 10m0s
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: secure-ingress-test
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   name: sources-entrypoint
 spec:
-  path: ../sources
+  interval: 10m0s
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: secure-ingress-test
